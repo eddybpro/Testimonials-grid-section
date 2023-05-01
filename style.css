@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+:root{
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+html{
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: var(--Light-grayish-blue);
+}
+
+.grid{
+    display: grid;
+    grid-template-areas:
+    'daniel'
+    'jonathan'
+    'jeanette'
+    'patrick'
+    'kira';
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+.card{
+    padding: 2rem;
+    border-radius: .8rem;
+}
+
+.user-box{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.user-img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: var(--Light-gray);
+    padding: .2rem;
+}
+
+.user-name{
+    font-size: 1.8rem;
+    color: var(--White);
+    margin-bottom: .2rem;
+    font-weight: 500;
+}
+
+.user-position{
+    color: var(--White);
+    font-size: 1.5rem;
+    opacity: .5;
+}
+
+.bold-para{
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--White);
+    margin-bottom: 2rem;
+}
+
+.txt{
+    color: var(--White);
+    line-height: 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    opacity: .7;
+}
+
+.daniel{
+    grid-area: daniel;
+    background: url('./images/bg-pattern-quotation.svg');
+    background-repeat: no-repeat;
+    background-position: top 0 right 1.5rem;
+    background-size: 11rem 11rem;
+    background-color: var(--Moderate-violet);
+    position: relative;
+}
+
+.quotation{
+    position: absolute;
+    width: 11rem;
+    height: 11rem;
+    top: 0;
+    right: 1.5rem;
+    opacity: .7;
+}
+
+.jonathan{
+    grid-area: jonathan;
+    background-color: var(--Very-dark-grayish-blue);
+}
+
+.jonathan-img{
+    background-color: var(--Very-dark-grayish-blue);
+}
+
+.jeanette{
+    grid-area: jeanette;
+    background-color: var(--White);
+}
+
+.user-name-b{
+    color: var(--Very-dark-grayish-blue);
+}
+
+.user-position-b{
+    color: var(--Very-dark-blackish-blue);
+    opacity: .5;
+}
+
+.bold-para-b{
+    color: var(--Very-dark-grayish-blue);
+}
+
+.txt-b{
+    color: var(--Very-dark-blackish-blue);
+    opacity: .7;
+}
+
+.patrick{
+    grid-area: patrick;
+    background-color: var(--Very-dark-blackish-blue);
+}
+
+.patrick-img{
+    background-color: var(--Moderate-violet);
+}
+
+.kira{
+    grid-area: kira;
+    background-color: var(--White);
+}
+
+footer{
+    text-align: center;
+    padding: 0 2rem;
+    margin: 2rem 0;
+}
+
+.attribution{
+    color: var(--Very-dark-blackish-blue);
+    font-size: 1.6rem;
+}
+
+.attribution a{
+    color: var(--Moderate-violet);
+    text-decoration: none;
+}
+
+@media screen and (min-width:1000px) {
+    .grid{
+        grid-auto-columns: 1fr;
+        grid-template-areas:
+        'daniel daniel jonathan kira'
+        'jeanette patrick patrick kira';
+    }
+
+    .daniel{
+        background-position: top 0 right 12rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
