@@ -1,2 +1,2 @@
 # Frontend Mentor - Testimonials grid section solution
-### [Live site]()
+### [Live site](https://stellar-bonbon-e2f552.netlify.app)
